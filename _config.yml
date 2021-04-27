@@ -1,0 +1,74 @@
+######################
+# Site configuration #
+######################
+title: "Learn About Tech" 
+description: "A repository of news sites, blogs, podcasts, books and commentators focused on the technology sector."
+author: "John Peart"
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.learnabout.tech"
+
+####################
+# Feature settings #
+####################
+analytics: false
+
+###############
+# Asset paths #
+###############
+image-path: "/assets/images"
+css-path: "/assets/styles"
+js-path: "/assets/scripts"
+social-media-image: "/assets/images/site/social-media.png"
+favicon: "/favicon.ico"
+favicon-svg: "/assets/images/site/favicon.svg"
+favicon-pinned-svg: "/assets/images/site/favicon-pinned-svg.svg"
+favicon-large-png: "/assets/images/site/favicon-large-png.png"
+theme-colour: "#009fe3"
+
+#######################
+# <link rel="me" ...> #
+#######################
+# Github
+github-url:  "https://github.com/johnpeart"
+github-handle:  "johnpeart"
+
+###############
+# Collections #
+###############
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+    defaults:
+      values:
+        layout: page
+             
+##################
+# Build settings #
+##################
+permalink: pretty
+markdown: kramdown
+future: false
+highlighter: rouge
+sass:
+  sass_dir: _sass
+
+plugins:
+- jekyll-remote-theme
+- jekyll-sitemap
+- jekyll-feed
+- jekyll-redirect-from
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
