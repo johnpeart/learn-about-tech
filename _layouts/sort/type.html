@@ -1,0 +1,45 @@
+---
+layout: page
+---
+
+{{ content }}
+
+{% assign resources = site.data.resources | sort: "type" %}
+
+{% for resource in resources %}
+
+{% include layouts/icons.html %}
+
+{% assign currenttype = resource.type %}
+
+{% if currenttype != type %}
+
+{% unless forloop.first %}
+	</div>
+</details>
+{% endunless %}
+
+<details>
+	<summary><h2>{{ icon }} {{ currenttype | capitalize | smartify }}</h2></summary>
+	<div class="details">
+	
+{% assign type = currenttype %}
+
+{% endif %}
+
+<details>
+	
+	<summary>
+		<h3>{{ resource.title | smartify }}</h3>
+	</summary>
+	
+	{% include layouts/resource-detail.html %}
+	
+</details>
+
+{% if forloop.last %}
+	</div>
+</details>
+{% endif %}
+
+{% endfor %}

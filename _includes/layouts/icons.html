@@ -1,0 +1,15 @@
+{% if resource.type == "podcasts" %}
+	{% assign icon = "🎧" %}
+{% elsif resource.type == "news" %}
+	{% assign icon = "📰" %}
+{% elsif resource.type == "blogs" %}
+	{% assign icon = "📝" %}
+{% elsif resource.type == "newsletters" %}
+	{% assign icon = "📬" %}
+{% elsif resource.type == "presentations" %}
+	{% assign icon = "📈" %}
+{% elsif resource.type == "twitter" %}
+	{% assign icon = "💬" %}
+{% else %}
+	{% assign icon = "❓" %}
+{% endif %}

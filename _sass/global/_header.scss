@@ -47,6 +47,7 @@ p#header--wordmark {
 	}
 	a.wordmark {
 		font-weight: 	bold;
+		font-style: 	italic;
 		
 		&:link {
 			@include toggleDarkMode(color, $black, $white);
@@ -200,11 +201,11 @@ ul#header-menu-items {
 	
 	a {
 		&:link {
-			@include toggleDarkMode(color, $cyan, $cyan);
+			@include toggleDarkMode(color, $brand, $brand);
 			text-decoration: none;
 		}
 		&:visited {
-			@include toggleDarkMode(color, $cyan, $cyan);
+			@include toggleDarkMode(color, $brand, $brand);
 			text-decoration: none;
 		}
 		&:hover {

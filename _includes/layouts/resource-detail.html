@@ -1,0 +1,7 @@
+<div class="details">
+	{{ resource.description | markdownify | truncate: 500 }}
+	
+	{% include layouts/resource-links.html %}
+	
+	{% include layouts/topics.html %}
+</div>

@@ -1,16 +1,16 @@
-{% assign domain = "//www.johnpe.art" %}
+{% assign domain = "//www.learnabout.tech" %}
 {% assign subdomain = site.url | append: site.baseurl %}
 
 <header id="site-header">
 	<nav id="header--site-nav" role="navigation" class="container">
 		{% if site.menu-subdomain == true %}
 		<p id="header--wordmark">
-			<a class="wordmark" href="{{ domain }}" title="Go to the home page">J<span class="wordmark-hidden">ohn </span>P<span class="wordmark-hidden">eart</span></a>
+			<a class="wordmark" href="{{ domain }}" title="Go to the home page">learn about tech</a>
 			<a class="site-title" href="{{ subdomain }}" title="Go to the main {{site.title}} page">{{ site.title }}</a>
 		</p>
 		{% else %}
 		<p id="header--wordmark">
-			<a class="wordmark" href="{{ domain }}" title="Go to the home page">John Peart</a>
+			<a class="wordmark" href="{{ domain }}" title="Go to the home page">learn about tech</a>
 		</p>
 		{% endif %}
 		
@@ -28,16 +28,6 @@
 				{% for menuitem in site.data.header-menu %}
 				<li class="header-link"><a href="{{ menuitem.link }}">{{ menuitem.label }}</a></li>
 				{% endfor %}
-			{% else %}
-				<li class="header-link"><a href="//www.johnpe.art/writing">Writing</a></li>
-				
-				<li class="header-link"><a href="//www.johnpe.art/photos">Photos</a></li>
-				
-				<li class="header-link"><a href="//www.johnpe.art/podcast">Podcasts</a></li>
-				
-				<li class="header-link"><a href="//www.johnpe.art/projects">Projects</a></li>
-									
-				<li class="header-link"><a href="//www.johnpe.art/about">About me</a></li>
 			{% endif %}
 		</ul>
 		{% endif %}

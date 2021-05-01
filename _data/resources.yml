@@ -1,0 +1,103 @@
+# - title: "" # Title of the resource
+#   description: "" # Short description up to 280 characters
+#   link: "" # https://www.example.com
+#   type: "" # What kind of content is it? e.g. blog, podcast, etc.
+#   topic: ["", ""] # What this resource is good for
+
+- title: "The Verge" # Title of the resource
+  description: "The Verge was founded in 2011. It covers the intersection of technology, science, art, and culture. Its mission is to offer in-depth reporting and long-form feature stories, breaking news coverage, product information, and community content in a unified and cohesive manner." # Short description up to 280 characters
+  link: "https://www.theverge.com" # https://www.example.com
+  type: "news" # What kind of content is it? e.g. blog, podcast, etc.
+  topic: ["consumer technology", "science", "culture"] # topic that this resource is good for
+  
+- title: "Engadget" # Title of the resource
+  description: "Engadget is the original home for technology news and reviews. Since its founding in 2004, Engadget has grown from an exhaustive source for consumer tech news to a global multimedia organization covering the intersection of technology, gaming and entertainment." # Short description up to 280 characters
+  link: "https://www.engadget.com" # https://www.example.com
+  type: "news" # What kind of content is it? e.g. blog, podcast, etc.
+  topic: ["consumer technology", "gaming", "entertainment"] # topic that this resource is good for
+
+- title: "Why'd You Push That Button?" # Title of the resource
+  description: "A podcast about the choices technology forces us to make, featuring interviews with consumers, developers, friends, and strangers. Hosted by The Verge’s Ashley Carman and Kaitlyn Tiffany, Why’d You Push That Button? asks the hard, weird, occasionally dumb questions about how your tiny tech decisions impact your " # Short description up to 280 characters
+  link: 
+  - platform: "Apple Music"
+    link: "https://podcasts.apple.com/us/podcast/whyd-you-push-that-button/id1295289748" # https://www.example.com
+  - platform: "Spotify"
+    link: "https://open.spotify.com/show/4xEBxMawkpToKdcnSTI7Ze"
+  type: "podcasts" # What kind of content is it? e.g. blog, podcast, etc.
+  topic: ["consumer technology", "culture"] # topic that this resource is good for
+
+- title: "Gadget Lab: Weekly Tech News" # Title of the resource
+  description: "Inside the hottest personal tech stories of the week; mobile apps, gear, social networking, and entertainment." # Short description up to 280 characters
+  link:
+  - platform: "Apple Podcasts"
+    url: "https://podcasts.apple.com/us/podcast/gadget-lab-weekly-tech-news/id266391367" # https://www.example.com
+  - platform: "Spotify"
+    url: "https://open.spotify.com/show/11hUjoJv4FxFnw9r0mHIsC" # https://www.example.com
+  type: "podcasts" # What kind of content is it? e.g. blog, podcast, etc.
+  topic: ["consumer technology", "apps", "social media", "entertainment"] # topic that this resource is good for
+  
+- title: "Benedict Evans – Newsletter" # Title of the resource
+  description: "**What mattered in tech this week?** Once a week, Benedict sends a newsletter to 160,000 people - what happened in tech that actually mattered, and what it means. He picks out the changes and ideas you don’t want to miss in all the noise, and give them context and analysis." # Short description up to 280 characters
+  link: "https://www.ben-evans.com/newsletter" # https://www.example.com
+  type: "newsletters" # What kind of content is it? e.g. blog, podcast, etc.
+  topic: ["market analysis", "big tech"] # What this resource is good for
+
+- title: "Benedict Evans – Essays" # Title of the resource
+  description: "**What matters in tech?** *Should we care about 5G? Is a platform a publisher? Would breaking up big tech work? What comes after Zoom? How does privacy conflict with competition? How does data change brands?* Stepping back from the noise, Benedict tries to work out what's really happening, what matters, and what it might mean." # Short description up to 280 characters
+  link: "https://www.ben-evans.com/essays" # https://www.example.com
+  type: "blogs" # What kind of content is it? e.g. blog, podcast, etc.
+  topic: ["market analysis", "big tech"] # What this resource is good for
+
+- title: "Benedict Evans – Annual presentation" # Title of the resource
+  description: "Every year, Benedict produces a big presentation digging into macro and strategic trends in the tech industry." # Short description up to 280 characters
+  link: "https://www.ben-evans.com/presentations" # https://www.example.com
+  type: "presentations" # What kind of content is it? e.g. blog, podcast, etc.
+  topic: ["market analysis", "big tech"] # What this resource is good for
+
+- title: "Platformer" # Title of the resource
+  description: "News at the intersection of Silicon Valley and democracy. A newsletter by Casey Newton." # Short description up to 280 characters
+  link: "https://www.platformer.news" # https://www.example.com
+  type: "newsletters" # What kind of content is it? e.g. blog, podcast, etc.
+  topic: ["social media", "big tech", "democracy"] # What this resource is good for
+
+- title: "Exponential View" # Title of the resource
+  description: "Azeem Azhar is one of the leading thinkers bridging the gap between two cultures — that of technology on one end, and humanities on the other—to provide a holistic understanding of our near future. Reading Exponential View weekly is a mental exercise in understanding the present from a multidisciplinary perspective of economics, technology, philosophy, and business, in order to explain the future. " # Short description up to 280 characters
+  link: "https://www.exponentialview.co" # https://www.example.com
+  type: "newsletters" # What kind of content is it? e.g. blog, podcast, etc.
+  topic: ["future technology", "culture"] # What this resource is good for
+
+- title: "Azheem Azhar (@azeem)" # Title of the resource
+  description: "Azeem Azhar on Twitter" # Short description up to 280 characters
+  link: "https://twitter.com/azeem" # https://www.example.com
+  type: "twitter" # What kind of content is it? e.g. blog, podcast, etc.
+  topic: ["future technology", "culture"] # What this resource is good for
+
+- title: "Benedict Evans (@benedictevans)" # Title of the resource
+  description: "Benedict Evans on Twitter" # Short description up to 280 characters
+  link: "https://twitter.com/benedictevans" # https://www.example.com
+  type: "twitter" # What kind of content is it? e.g. blog, podcast, etc.
+  topic: ["market analysis", "big tech"] # What this resource is good for
+
+- title: "Mike Bracken (@MTBracken)" # Title of the resource
+  description: "Partner at Public Digital. Former Executive Director of the Government Digital Service." # Short description up to 280 characters
+  link: "https://twitter.com/MTBracken" # https://www.example.com
+  type: "twitter" # What kind of content is it? e.g. blog, podcast, etc.
+  topic: ["government technology", "digital transformation"] # What this resource is good for
+
+- title: "Daniel Korski (@DanielKorski)" # Title of the resource
+  description: "CEO of PUBLIC" # Short description up to 280 characters
+  link: "https://twitter.com/DanielKorski" # https://www.example.com
+  type: "twitter" # What kind of content is it? e.g. blog, podcast, etc.
+  topic: ["government technology", "digital transformation"] # What this resource is good for
+
+# - title: "" # Title of the resource
+#   description: "" # Short description up to 280 characters
+#   link: "" # https://www.example.com
+#   type: "" # What kind of content is it? e.g. blog, podcast, etc.
+#   topic: ["", ""] # What this resource is good for
+
+# - title: "" # Title of the resource
+#   description: "" # Short description up to 280 characters
+#   link: "" # https://www.example.com
+#   type: "" # What kind of content is it? e.g. blog, podcast, etc.
+#   topic: ["", ""] # What this resource is good for

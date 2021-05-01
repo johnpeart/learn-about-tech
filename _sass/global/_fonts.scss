@@ -1,0 +1,75 @@
+@font-face {
+	font-family: 'custom';
+	
+	font-weight: normal;
+	font-style: normal;
+	
+	src: 	url('../fonts/Regular.eot');
+	src: 	url('../fonts/Regular.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/Regular.woff2') format('woff2'),
+			url('../fonts/Regular.woff') format('woff');
+	
+	   -moz-font-feature-settings:	$font-feature-settings;
+		 -o-font-feature-settings:	$font-feature-settings;
+	-webkit-font-feature-settings:	$font-feature-settings;
+			font-feature-settings:	$font-feature-settings;
+				 
+	font-display: fallback;
+}
+
+@font-face {
+	font-family: 'custom';
+	
+	font-weight: normal;
+	font-style: italic;
+	
+	src: 	url('../fonts/Italic.eot');
+	src: 	url('../fonts/Italic.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/Italic.woff2') format('woff2'),
+			url('../fonts/Italic.woff') format('woff');
+	
+	-moz-font-feature-settings:	$font-feature-settings;
+	-o-font-feature-settings:	$font-feature-settings;
+	-webkit-font-feature-settings:	$font-feature-settings;
+	font-feature-settings:	$font-feature-settings;
+		
+	font-display: fallback;
+}
+ 
+@font-face {
+	font-family: 'custom';
+	
+	font-weight: bold;
+	font-style: normal;
+	
+	src: 	url('../fonts/Bold.eot');
+	src: 	url('../fonts/Bold.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/Bold.woff2') format('woff2'),
+			url('../fonts/Bold.woff') format('woff');
+	
+	-moz-font-feature-settings:	$font-feature-settings;
+	-o-font-feature-settings:	$font-feature-settings;
+	-webkit-font-feature-settings:	$font-feature-settings;
+	font-feature-settings:	$font-feature-settings;
+		
+	font-display: fallback;
+}
+ 
+@font-face {
+	font-family: 'custom';
+	
+	font-weight: bold;
+	font-style: italic;
+	
+	src: 	url('../fonts/BoldItalic.eot');
+	src: 	url('../fonts/BoldItalic.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/BoldItalic.woff2') format('woff2'),
+			url('../fonts/BoldItalic.woff') format('woff');
+	
+	-moz-font-feature-settings:	$font-feature-settings;
+	-o-font-feature-settings:	$font-feature-settings;
+	-webkit-font-feature-settings:	$font-feature-settings;
+	font-feature-settings:	$font-feature-settings;
+		
+	font-display: fallback;
+}

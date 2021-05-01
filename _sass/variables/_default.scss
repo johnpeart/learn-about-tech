@@ -23,6 +23,7 @@ $container-lg: 	 					800px;
 $container-xl: 	 					900px;
 $container-padding: 	 			15px;
 
+
 // --------------------------------------//
 // --------------------------------------//
 // --------------------------------------//
@@ -30,7 +31,7 @@ $container-padding: 	 			15px;
 // FONTS
 
 // Font face
-$font-family: 						system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family: 						"custom", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 // Feature settings
 $font-feature-settings:				"ss02", "tnum", "liga", "zero", "kern";
 $sup-font-feature-settings:			"ss02", "tnum", "liga", "zero", "kern", "frac";
@@ -64,7 +65,6 @@ $magenta:   	 					#e6007e !default;
 $red:     	 						#B10E1E !default;
 $orange:  	 						#ff5e3a !default;
 $yellow:  	 						#ffed00 !default;
-$bad-ideas-yellow:                  #FFD700 !default;
 $green:   	 						#0bd318 !default;
 $cyan:    	 						#009fe3 !default;
 
@@ -241,17 +241,17 @@ $footer--padding-bottom--xl:	60px;
 // PARAGRAPH TEXT
 // Applies to 'p' and equivalent text
 // Size
-$font-size--p--xs:		22px;
-$font-size--p--sm:		22px;
-$font-size--p--md:		22px;
-$font-size--p--lg:		26px;
-$font-size--p--xl:		30px;
+$font-size--p--xs:		16px;
+$font-size--p--sm:		16px;
+$font-size--p--md:		16px;
+$font-size--p--lg:		18px;
+$font-size--p--xl:		18px;
 // Line height
-$line-height--p--xs:	1.25;
-$line-height--p--sm:	1.25;
-$line-height--p--md:	1.25;
-$line-height--p--lg:	1.25;
-$line-height--p--xl:	1.2;
+$line-height--p--xs:	1.3;
+$line-height--p--sm:	1.3;
+$line-height--p--md:	1.3;
+$line-height--p--lg:	1.3;
+$line-height--p--xl:	1.35;
 // Padding (bottom spacing)
 $padding--p--xs:		0 0 $font-size--p--xs 0;
 $padding--p--sm:		0 0 $font-size--p--sm 0;
@@ -262,11 +262,11 @@ $padding--p--xl:		0 0 $font-size--p--xl 0;
 // HEADER WORDMARK TEXT
 // Applies to the Wordmark only (smaller for the normal links)
 // Size
-$font-size--header-wordmark--xs:	30px;
-$font-size--header-wordmark--sm:	30px;
-$font-size--header-wordmark--md:	30px;
-$font-size--header-wordmark--lg:	34px;
-$font-size--header-wordmark--xl:	36px;
+$font-size--header-wordmark--xs:	22px;
+$font-size--header-wordmark--sm:	22px;
+$font-size--header-wordmark--md:	22px;
+$font-size--header-wordmark--lg:	26px;
+$font-size--header-wordmark--xl:	30px;
 // Line height
 $line-height--header-wordmark--xs:	1;
 $line-height--header-wordmark--sm:	1;
@@ -283,11 +283,11 @@ $padding--header-wordmark--xl:		(($header-min-height - $font-size--header-wordma
 // HEADER NAV TEXT
 // Applies to text inside the Header nav items
 // Size
-$font-size--header-menu--xs:	26px;
-$font-size--header-menu--sm:	22px;
-$font-size--header-menu--md:	22px;
-$font-size--header-menu--lg:	26px;
-$font-size--header-menu--xl:	30px;
+$font-size--header-menu--xs:	20px;
+$font-size--header-menu--sm:	20px;
+$font-size--header-menu--md:	20px;
+$font-size--header-menu--lg:	23px;
+$font-size--header-menu--xl:	26px;
 // Line height
 $line-height--header-menu--xs:	1;
 $line-height--header-menu--sm:	1;
@@ -326,11 +326,11 @@ $padding--footer--p--xl:		0 0 ($font-size--footer--p--xl * 0.25) 0;
 // DISPLAY TEXT
 // Applies to 'h1' size on home and 404 pages
 // Size
-$font-size--display--xs:		66px;
-$font-size--display--sm:		90px;
-$font-size--display--md:		120px;
-$font-size--display--lg:		144px;
-$font-size--display--xl:		164px;
+$font-size--display--xs:		50px;
+$font-size--display--sm:		60px;
+$font-size--display--md:		80px;
+$font-size--display--lg:		100px;
+$font-size--display--xl:		120px;
 // Line height
 $line-height--display--xs:	1;
 $line-height--display--sm:	1;
@@ -347,11 +347,11 @@ $padding--display--xl:		($font-size--display--xl * 1.5) 0 ($font-size--display--
 // HEADING 1 TEXT
 // Applies to 'h1' and equivalent text
 // Size
-$font-size--h1--xs:		44px;
-$font-size--h1--sm:		60px;
-$font-size--h1--md:		60px;
-$font-size--h1--lg:		72px;
-$font-size--h1--xl:		82px;
+$font-size--h1--xs:		40px;
+$font-size--h1--sm:		50px;
+$font-size--h1--md:		50px;
+$font-size--h1--lg:		60px;
+$font-size--h1--xl:		70px;
 // Line height
 $line-height--h1--xs:	1.1;
 $line-height--h1--sm:	1.1;
@@ -374,11 +374,11 @@ $text-transform--h1:	none;
 // HEADING 2 TEXT
 // Applies to 'h2' and equivalent text
 // Size
-$font-size--h2--xs:		27px;
-$font-size--h2--sm:		32px;
-$font-size--h2--md:		32px;
-$font-size--h2--lg:		36px;
-$font-size--h2--xl:		40px;
+$font-size--h2--xs:		25px;
+$font-size--h2--sm:		30px;
+$font-size--h2--md:		30px;
+$font-size--h2--lg:		34px;
+$font-size--h2--xl:		36px;
 // Line height
 $line-height--h2--xs:	1.25;
 $line-height--h2--sm:	1.25;
@@ -401,11 +401,11 @@ $text-transform--h2:	none;
 // HEADING 3 TEXT
 // Applies to 'h3' and equivalent text
 // Size
-$font-size--h3--xs:		22px;
-$font-size--h3--sm:		22px;
-$font-size--h3--md:		22px;
-$font-size--h3--lg:		26px;
-$font-size--h3--xl:		30px;
+$font-size--h3--xs:		20px;
+$font-size--h3--sm:		20px;
+$font-size--h3--md:		20px;
+$font-size--h3--lg:		23px;
+$font-size--h3--xl:		26px;
 // Line height
 $line-height--h3--xs:	1.25;
 $line-height--h3--sm:	1.25;
@@ -428,11 +428,11 @@ $text-transform--h3:	none;
 // HEADING 4 TEXT
 // Applies to 'h4' and equivalent text
 // Size
-$font-size--h4--xs:		22px;
-$font-size--h4--sm:		22px;
-$font-size--h4--md:		22px;
-$font-size--h4--lg:		26px;
-$font-size--h4--xl:		30px;
+$font-size--h4--xs:		20px;
+$font-size--h4--sm:		20px;
+$font-size--h4--md:		20px;
+$font-size--h4--lg:		23px;
+$font-size--h4--xl:		26px;
 // Line height
 $line-height--h4--xs:	1.25;
 $line-height--h4--sm:	1.25;

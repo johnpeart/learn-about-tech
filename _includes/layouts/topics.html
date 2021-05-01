@@ -1,0 +1,12 @@
+<aside class="tags">
+	<span class="type chiclet">
+		<span class="icon">{{ icon }}</span>
+		<span class="text">{{ resource.type | capitalize }}</span>
+	</span>
+	{% for topic in resource.topic %}
+		<span class="topic chiclet">
+			<span class="icon">🏷</span>
+			<span class="text">{{ topic | capitalize }}</span>
+		</span>
+	{% endfor %}
+</aside>

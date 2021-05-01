@@ -1,0 +1,49 @@
+---
+layout: page
+---
+
+{{ content }}
+
+{% assign resources = site.data.resources | sort: "topic" %}
+{% assign topics = "" | split: "" %}
+
+{% for resource in resources %}
+	{% for topic in resource.topic %}
+		{% unless topics contains topic %}
+			{% assign topics = topics | push: topic %}
+		{% endunless %}
+	{% endfor %}
+{% endfor %}
+
+{% assign topics = topics | sort %}
+
+{% for topic in topics %}
+	{% assign relatedresources = resources | where: "topic", topic | sort: "type" %}
+	<details>
+		<summary><h2>{{ topic | capitalize | smartify }}</h2></summary>
+		<div class="details">
+		{% for resource in relatedresources %}
+		
+		{% include layouts/icons.html %}
+		
+			<details>
+				
+				<summary>
+					<h3>{{ resource.title | smartify }}</h3>
+					<span class="type chiclet">
+						<span class="icon">{{ icon }}</span>
+						<span class="text">{{ resource.type | capitalize }}</span>
+					</span>
+				</summary>
+				
+				{% include layouts/resource-detail.html %}
+								
+			</details>
+		
+		
+		{% endfor %}
+		</div>
+	</details>
+{% endfor %}
+
+

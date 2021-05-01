@@ -1,0 +1,27 @@
+---
+layout: page
+---
+
+{{ content }}
+
+{% assign resources = site.data.resources | sort: "title" %}
+
+{% for resource in resources %}
+
+{% include layouts/icons.html %}
+
+<details>
+	
+	<summary>
+		<h2>{{ resource.title | smartify }}</h2>
+		<span class="type chiclet">
+			<span class="icon">{{ icon }}</span>
+			<span class="text">{{ resource.type | capitalize }}</span>
+		</span>
+	</summary>
+	
+	{% include layouts/resource-detail.html %}
+	
+</details>
+
+{% endfor %}
