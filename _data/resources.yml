@@ -14,7 +14,7 @@
   description: "Engadget is the original home for technology news and reviews. Since its founding in 2004, Engadget has grown from an exhaustive source for consumer tech news to a global multimedia organization covering the intersection of technology, gaming and entertainment." # Short description up to 280 characters
   link: "https://www.engadget.com" # https://www.example.com
   type: "news" # What kind of content is it? e.g. blog, podcast, etc.
-  topic: ["consumer technology", "gaming", "entertainment"] # topic that this resource is good for
+  topic: ["consumer technology", "entertainment"] # topic that this resource is good for
 
 - title: "Why'd You Push That Button?" # Title of the resource
   description: "A podcast about the choices technology forces us to make, featuring interviews with consumers, developers, friends, and strangers. Hosted by The Verge’s Ashley Carman and Kaitlyn Tiffany, Why’d You Push That Button? asks the hard, weird, occasionally dumb questions about how your tiny tech decisions impact your " # Short description up to 280 characters
@@ -64,13 +64,13 @@
   description: "Azeem Azhar is one of the leading thinkers bridging the gap between two cultures — that of technology on one end, and humanities on the other—to provide a holistic understanding of our near future. Reading Exponential View weekly is a mental exercise in understanding the present from a multidisciplinary perspective of economics, technology, philosophy, and business, in order to explain the future. " # Short description up to 280 characters
   link: "https://www.exponentialview.co" # https://www.example.com
   type: "newsletters" # What kind of content is it? e.g. blog, podcast, etc.
-  topic: ["future technology", "culture"] # What this resource is good for
+  topic: ["emerging technology", "culture"] # What this resource is good for
 
 - title: "Azheem Azhar (@azeem)" # Title of the resource
   description: "Azeem Azhar on Twitter" # Short description up to 280 characters
   link: "https://twitter.com/azeem" # https://www.example.com
   type: "twitter" # What kind of content is it? e.g. blog, podcast, etc.
-  topic: ["future technology", "culture"] # What this resource is good for
+  topic: ["emerging technology", "culture"] # What this resource is good for
 
 - title: "Benedict Evans (@benedictevans)" # Title of the resource
   description: "Benedict Evans on Twitter" # Short description up to 280 characters
@@ -90,14 +90,50 @@
   type: "twitter" # What kind of content is it? e.g. blog, podcast, etc.
   topic: ["government technology", "digital transformation"] # What this resource is good for
 
-# - title: "" # Title of the resource
-#   description: "" # Short description up to 280 characters
-#   link: "" # https://www.example.com
-#   type: "" # What kind of content is it? e.g. blog, podcast, etc.
-#   topic: ["", ""] # What this resource is good for
+- title: "Wired" # Title of the resource
+  description: "Wired is a monthly American magazine, published in print and online editions, that focuses on how emerging technologies affect culture, the economy, and politics. Owned by Condé Nast, it is headquartered in San Francisco, California, and has been in publication since March/April 1993." # Short description up to 280 characters
+  link: "https://www.wired.com" # https://www.example.com
+  type: "news" # What kind of content is it? e.g. blog, podcast, etc.
+  topic: ["science", "security", "business", "culture", "consumer technology"] # What this resource is good for
 
-# - title: "" # Title of the resource
-#   description: "" # Short description up to 280 characters
-#   link: "" # https://www.example.com
-#   type: "" # What kind of content is it? e.g. blog, podcast, etc.
-#   topic: ["", ""] # What this resource is good for
+- title: "MIT Technology Review" # Title of the resource
+  description: "The mission of MIT Technology Review is to make technology a greater force for good by bringing about better-informed, more conscious technology decisions through authoritative, influential, and trustworthy journalism." # Short description up to 280 characters
+  link: "https://www.technologyreview.com" # https://www.example.com
+  type: "news" # What kind of content is it? e.g. blog, podcast, etc.
+  topic: ["emerging technology", "science"] # What this resource is good for
+
+- title: "The Download" # Title of the resource
+  description: "Your daily dose of what's up in emerging technology from the MIT Technology Review." # Short description up to 280 characters
+  link: "https://forms.technologyreview.com/newsletters/briefing-the-download/" # https://www.example.com
+  type: "newsletters" # What kind of content is it? e.g. blog, podcast, etc.
+  topic: ["emerging technology", "science"] # What this resource is good for
+
+- title: "fwd: Economy" # Title of the resource
+  description: "Your guide to growth and prosperity in the age of technology from the MIT Technology Review." # Short description up to 280 characters
+  link: "https://forms.technologyreview.com/newsletters/growth-economy/" # https://www.example.com
+  type: "newsletters" # What kind of content is it? e.g. blog, podcast, etc.
+  topic: ["economics", "market analysis", "emerging technology"] # What this resource is good for
+
+- title: "Kara Swisher (@karaswisher)" # Title of the resource
+  description: "Described by Newsweek as Silicon Valley's ”most powerful tech journalist”, Kara Swisher is an opinion writer for The New York Times, a contributing editor at New York, the host of the podcast Sway, and the co-host of the podcast Pivot." # Short description up to 280 characters
+  link: "https://twitter.com/karaswisher" # https://www.example.com
+  type: "twitter" # What kind of content is it? e.g. blog, podcast, etc.
+  topic: ["big tech"] # What this resource is good for
+
+- title: "ISPreview" # Title of the resource
+  description: "Independent UK Internet Service Provider reviews, daily top broadband ISP, news, guides, chat and compare hundreds of the best cheap ISP deals." # Short description up to 280 characters
+  link: "https://www.ispreview.co.uk" # https://www.example.com
+  type: "news" # What kind of content is it? e.g. blog, podcast, etc.
+  topic: ["telecoms"] # What this resource is good for
+
+- title: "Diginomica" # Title of the resource
+  description: "Business insights for the digital enterprise." # Short description up to 280 characters
+  link: "https://diginomica.com" # https://www.example.com
+  type: "news" # What kind of content is it? e.g. blog, podcast, etc.
+  topic: ["enterprise", "digital transformation"] # What this resource is good for
+
+- title: "The Register" # Title of the resource
+  description: "The Register is a leading and trusted global online enterprise technology news publication, reaching roughly 40 million readers worldwide." # Short description up to 280 characters
+  link: "https://www.theregister.com" # https://www.example.com
+  type: "news" # What kind of content is it? e.g. blog, podcast, etc.
+  topic: ["enterprise", "security"] # What this resource is good for
