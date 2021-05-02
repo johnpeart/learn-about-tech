@@ -57,6 +57,13 @@ ul {
 	@include toggleSizes(padding-left, ($font-size--p--xs * 1.5), ($font-size--p--sm * 1.5), 0, 0, 0);
 	@include toggleSizes(padding-bottom, $font-size--p--xs, $font-size--p--sm, $font-size--p--md, $font-size--p--lg, $font-size--p--xl);
 	
+	li:before {
+		position: relative;
+		content: "\2014";
+
+		@include toggleSizes(left, -($font-size--p--xs / 2), -($font-size--p--sm / 2), -($font-size--p--md / 2), -($font-size--p--lg / 2), -($font-size--p--xl / 2));
+	}
+	
 }
 ol {
 	
@@ -184,6 +191,7 @@ h1.site-title {
 	text-align: 		left;
 	text-decoration: 	$text-decoration--h1;
 	text-transform: 	lowercase;
+	color: 				$green;
 	
 	@include toggleSizes(font-size, $font-size--display--xs, $font-size--display--sm, $font-size--display--md, $font-size--display--lg, $font-size--display--xl);
 	@include toggleSizes(line-height, $line-height--display--xs, $line-height--display--sm, $line-height--display--md, $line-height--display--lg, $line-height--display--xl);
@@ -455,154 +463,4 @@ summary {
 	
 	@include clearfix;
 	
-}
-
-span.chiclet {
-	display: inline-block;
-	height: 100%;
-	border-radius: 100px;
-	padding-right: 5px;
-	
-	span.icon {
-		display: inline-block;
-		@include toggleSizes(width, $font-size--h4--xs, $font-size--h4--sm, $font-size--h4--md, $font-size--h4--lg, $font-size--h4--xl);
-		@include toggleSizes(height, $font-size--h4--xs, $font-size--h4--sm, $font-size--h4--md, $font-size--h4--lg, $font-size--h4--xl);
-		@include toggleSizes(font-size, ($font-size--p--xs - 6px), ($font-size--p--sm - 6px), ($font-size--p--md - 6px), ($font-size--p--lg - 6px), ($font-size--p--xl - 6px) );
-		@include toggleSizes(line-height, $font-size--h4--xs, $font-size--h4--sm, $font-size--h4--md, $font-size--h4--lg, $font-size--h4--xl);
-		padding: 0px;
-		vertical-align: middle;
-		border-radius: 100px;
-		text-align: center;
-	}
-	span.text {
-		display: inline-block;
-		position: relative;
-		@include toggleSizes(height, $font-size--h4--xs, $font-size--h4--sm, $font-size--h4--md, $font-size--h4--lg, $font-size--h4--xl);
-		@include toggleSizes(font-size, $font-size--p--xs, $font-size--p--sm, $font-size--p--md, $font-size--p--lg, $font-size--p--xl );
-		@include toggleSizes(line-height, $font-size--h4--xs, $font-size--h4--sm, $font-size--h4--md, $font-size--h4--lg, $font-size--h4--xl);
-		vertical-align: middle;
-	}
-}
-
-aside.links {
-	display: block;
-	margin: $container-padding 0;
-}
-aside.tags {
-	display: block;
-	margin-top: $container-padding;
-	
-	span.chiclet {
-		float: left !important;
-	}
-	@include clearfix;
-}
-
-span.chiclet {
-	margin: 1px 4px 1px 0;
-}
-
-span.type.chiclet {
-	float: right;
-	
-	background: lighten($brand, 40%);
-	color: $black;
-	border: 3px solid lighten($brand, 40%);
-	
-	span.icon {
-		background: lighten($brand, 50%);
-		border: 1px solid lighten($brand, 50%);
-	}
-}
-
-span.topic.chiclet {
-	background: $gray-200;
-	color: $black;
-	border: 3px solid $gray-200;
-	
-	span.icon {
-		background: $gray-600;
-		border: 1px solid $gray-300;
-	}
-}
-
-a.resource-link {
-	display: inline-block;
-	height: 100%;
-	border-radius: 100px;
-	padding-right: 5px;
-	text-decoration: none;
-	margin: 1px 4px 1px 0;	
-		
-	&:link {
-		background: lighten($magenta, 50%);
-		color: $black;
-		border: 3px solid lighten($magenta, 50%);
-		
-		span.icon {
-			background: $white;
-			border: 1px solid $white;
-		}
-		span.text {
-			
-		}
-	}
-	&:visited {
-		background: lighten($magenta, 50%);
-		color: $black;
-		border: 3px solid lighten($magenta, 50%);
-		
-		span.icon {
-			background: $white;
-			border: 1px solid $white;
-		}
-		span.text {
-			
-		}
-	}
-	&:hover {
-		background: $magenta;
-		color: $white;
-		border: 3px solid $magenta;
-		
-		span.icon {
-			background: lighten($magenta, 50%);
-		}
-		span.text {
-			
-		}
-	}
-	&:focus {
-		background: $yellow;
-		color: $black;
-		border: 3px solid $yellow;
-		
-		span.icon {
-			background: $white;
-			border: 1px solid $yellow;				
-		}
-		span.text {
-			
-		}
-	}
-	
-	span.icon {
-		display: inline-block;
-		@include toggleSizes(width, $font-size--h4--xs, $font-size--h4--sm, $font-size--h4--md, $font-size--h4--lg, $font-size--h4--xl);
-		@include toggleSizes(height, $font-size--h4--xs, $font-size--h4--sm, $font-size--h4--md, $font-size--h4--lg, $font-size--h4--xl);
-		@include toggleSizes(font-size, ($font-size--p--xs - 6px), ($font-size--p--sm - 6px), ($font-size--p--md - 6px), ($font-size--p--lg - 6px), ($font-size--p--xl - 6px) );
-		@include toggleSizes(line-height, $font-size--h4--xs, $font-size--h4--sm, $font-size--h4--md, $font-size--h4--lg, $font-size--h4--xl);
-		padding: 0px;
-		vertical-align: middle;
-		border-radius: 100px;
-		text-align: center;
-	}
-	span.text {
-		display: inline-block;
-		position: relative;
-		@include toggleSizes(height, $font-size--h4--xs, $font-size--h4--sm, $font-size--h4--md, $font-size--h4--lg, $font-size--h4--xl);
-		@include toggleSizes(font-size, $font-size--p--xs, $font-size--p--sm, $font-size--p--md, $font-size--p--lg, $font-size--p--xl );
-		@include toggleSizes(line-height, $font-size--h4--xs, $font-size--h4--sm, $font-size--h4--md, $font-size--h4--lg, $font-size--h4--xl);
-		vertical-align: middle;
-	}
 }
