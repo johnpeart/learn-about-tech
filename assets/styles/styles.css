@@ -146,6 +146,16 @@ ul { list-style: none; padding-top: 0; padding-left: 24px; padding-bottom: 16px;
 
 @media only screen and (min-width: 1200px) { ul { padding-bottom: 18px; } }
 
+ul li:before { position: relative; content: "\2014"; left: -8px; }
+
+@media only screen and (min-width: 600px) and (max-width: 765px) { ul li:before { left: -8px; } }
+
+@media only screen and (min-width: 766px) and (max-width: 999px) { ul li:before { left: -8px; } }
+
+@media only screen and (min-width: 1000px) and (max-width: 1199px) { ul li:before { left: -9px; } }
+
+@media only screen and (min-width: 1200px) { ul li:before { left: -9px; } }
+
 ol { list-style: decimal; padding-top: 0; padding-left: 32px; padding-bottom: 16px; }
 
 @media only screen and (min-width: 600px) and (max-width: 765px) { ol { padding-left: 32px; } }
@@ -268,7 +278,7 @@ h1.display { font-size: 50px; line-height: 1; padding: 62.5px 0 5px 0; }
 
 @media only screen and (min-width: 1200px) { h1.display { padding: 180px 0 12px 0; } }
 
-h1.site-title { font-weight: bold; font-style: italic; text-align: left; text-decoration: none; text-transform: lowercase; font-size: 50px; line-height: 1; padding: 62.5px 0 5px 0; }
+h1.site-title { font-weight: bold; font-style: italic; text-align: left; text-decoration: none; text-transform: lowercase; color: #0bd318; font-size: 50px; line-height: 1; padding: 62.5px 0 5px 0; }
 
 @media only screen and (min-width: 600px) and (max-width: 765px) { h1.site-title { font-size: 60px; } }
 
@@ -615,164 +625,6 @@ summary:active { color: #fafafa; background: #009fe3; outline: 3px #009fe3 solid
 @media (prefers-color-scheme: dark) { summary:active { outline: 3px #009fe3 solid; } }
 
 summary::after { content: ""; clear: both; display: table; }
-
-span.chiclet { display: inline-block; height: 100%; border-radius: 100px; padding-right: 5px; }
-
-span.chiclet span.icon { display: inline-block; width: 20px; height: 20px; font-size: 10px; line-height: 20px; padding: 0px; vertical-align: middle; border-radius: 100px; text-align: center; }
-
-@media only screen and (min-width: 600px) and (max-width: 765px) { span.chiclet span.icon { width: 20px; } }
-
-@media only screen and (min-width: 766px) and (max-width: 999px) { span.chiclet span.icon { width: 20px; } }
-
-@media only screen and (min-width: 1000px) and (max-width: 1199px) { span.chiclet span.icon { width: 23px; } }
-
-@media only screen and (min-width: 1200px) { span.chiclet span.icon { width: 26px; } }
-
-@media only screen and (min-width: 600px) and (max-width: 765px) { span.chiclet span.icon { height: 20px; } }
-
-@media only screen and (min-width: 766px) and (max-width: 999px) { span.chiclet span.icon { height: 20px; } }
-
-@media only screen and (min-width: 1000px) and (max-width: 1199px) { span.chiclet span.icon { height: 23px; } }
-
-@media only screen and (min-width: 1200px) { span.chiclet span.icon { height: 26px; } }
-
-@media only screen and (min-width: 600px) and (max-width: 765px) { span.chiclet span.icon { font-size: 10px; } }
-
-@media only screen and (min-width: 766px) and (max-width: 999px) { span.chiclet span.icon { font-size: 10px; } }
-
-@media only screen and (min-width: 1000px) and (max-width: 1199px) { span.chiclet span.icon { font-size: 12px; } }
-
-@media only screen and (min-width: 1200px) { span.chiclet span.icon { font-size: 12px; } }
-
-@media only screen and (min-width: 600px) and (max-width: 765px) { span.chiclet span.icon { line-height: 20px; } }
-
-@media only screen and (min-width: 766px) and (max-width: 999px) { span.chiclet span.icon { line-height: 20px; } }
-
-@media only screen and (min-width: 1000px) and (max-width: 1199px) { span.chiclet span.icon { line-height: 23px; } }
-
-@media only screen and (min-width: 1200px) { span.chiclet span.icon { line-height: 26px; } }
-
-span.chiclet span.text { display: inline-block; position: relative; height: 20px; font-size: 16px; line-height: 20px; vertical-align: middle; }
-
-@media only screen and (min-width: 600px) and (max-width: 765px) { span.chiclet span.text { height: 20px; } }
-
-@media only screen and (min-width: 766px) and (max-width: 999px) { span.chiclet span.text { height: 20px; } }
-
-@media only screen and (min-width: 1000px) and (max-width: 1199px) { span.chiclet span.text { height: 23px; } }
-
-@media only screen and (min-width: 1200px) { span.chiclet span.text { height: 26px; } }
-
-@media only screen and (min-width: 600px) and (max-width: 765px) { span.chiclet span.text { font-size: 16px; } }
-
-@media only screen and (min-width: 766px) and (max-width: 999px) { span.chiclet span.text { font-size: 16px; } }
-
-@media only screen and (min-width: 1000px) and (max-width: 1199px) { span.chiclet span.text { font-size: 18px; } }
-
-@media only screen and (min-width: 1200px) { span.chiclet span.text { font-size: 18px; } }
-
-@media only screen and (min-width: 600px) and (max-width: 765px) { span.chiclet span.text { line-height: 20px; } }
-
-@media only screen and (min-width: 766px) and (max-width: 999px) { span.chiclet span.text { line-height: 20px; } }
-
-@media only screen and (min-width: 1000px) and (max-width: 1199px) { span.chiclet span.text { line-height: 23px; } }
-
-@media only screen and (min-width: 1200px) { span.chiclet span.text { line-height: 26px; } }
-
-aside.links { display: block; margin: 15px 0; }
-
-aside.tags { display: block; margin-top: 15px; }
-
-aside.tags span.chiclet { float: left !important; }
-
-aside.tags::after { content: ""; clear: both; display: table; }
-
-span.chiclet { margin: 1px 4px 1px 0; }
-
-span.type.chiclet { float: right; background: #b0e7ff; color: #1d1d1d; border: 3px solid #b0e7ff; }
-
-span.type.chiclet span.icon { background: #e3f7ff; border: 1px solid #e3f7ff; }
-
-span.topic.chiclet { background: #e9ecef; color: #1d1d1d; border: 3px solid #e9ecef; }
-
-span.topic.chiclet span.icon { background: #868e96; border: 1px solid #dee2e6; }
-
-a.resource-link { display: inline-block; height: 100%; border-radius: 100px; padding-right: 5px; text-decoration: none; margin: 1px 4px 1px 0; }
-
-a.resource-link:link { background: #ffe6f4; color: #1d1d1d; border: 3px solid #ffe6f4; }
-
-a.resource-link:link span.icon { background: #fafafa; border: 1px solid #fafafa; }
-
-a.resource-link:visited { background: #ffe6f4; color: #1d1d1d; border: 3px solid #ffe6f4; }
-
-a.resource-link:visited span.icon { background: #fafafa; border: 1px solid #fafafa; }
-
-a.resource-link:hover { background: #e6007e; color: #fafafa; border: 3px solid #e6007e; }
-
-a.resource-link:hover span.icon { background: #ffe6f4; }
-
-a.resource-link:focus { background: #ffed00; color: #1d1d1d; border: 3px solid #ffed00; }
-
-a.resource-link:focus span.icon { background: #fafafa; border: 1px solid #ffed00; }
-
-a.resource-link span.icon { display: inline-block; width: 20px; height: 20px; font-size: 10px; line-height: 20px; padding: 0px; vertical-align: middle; border-radius: 100px; text-align: center; }
-
-@media only screen and (min-width: 600px) and (max-width: 765px) { a.resource-link span.icon { width: 20px; } }
-
-@media only screen and (min-width: 766px) and (max-width: 999px) { a.resource-link span.icon { width: 20px; } }
-
-@media only screen and (min-width: 1000px) and (max-width: 1199px) { a.resource-link span.icon { width: 23px; } }
-
-@media only screen and (min-width: 1200px) { a.resource-link span.icon { width: 26px; } }
-
-@media only screen and (min-width: 600px) and (max-width: 765px) { a.resource-link span.icon { height: 20px; } }
-
-@media only screen and (min-width: 766px) and (max-width: 999px) { a.resource-link span.icon { height: 20px; } }
-
-@media only screen and (min-width: 1000px) and (max-width: 1199px) { a.resource-link span.icon { height: 23px; } }
-
-@media only screen and (min-width: 1200px) { a.resource-link span.icon { height: 26px; } }
-
-@media only screen and (min-width: 600px) and (max-width: 765px) { a.resource-link span.icon { font-size: 10px; } }
-
-@media only screen and (min-width: 766px) and (max-width: 999px) { a.resource-link span.icon { font-size: 10px; } }
-
-@media only screen and (min-width: 1000px) and (max-width: 1199px) { a.resource-link span.icon { font-size: 12px; } }
-
-@media only screen and (min-width: 1200px) { a.resource-link span.icon { font-size: 12px; } }
-
-@media only screen and (min-width: 600px) and (max-width: 765px) { a.resource-link span.icon { line-height: 20px; } }
-
-@media only screen and (min-width: 766px) and (max-width: 999px) { a.resource-link span.icon { line-height: 20px; } }
-
-@media only screen and (min-width: 1000px) and (max-width: 1199px) { a.resource-link span.icon { line-height: 23px; } }
-
-@media only screen and (min-width: 1200px) { a.resource-link span.icon { line-height: 26px; } }
-
-a.resource-link span.text { display: inline-block; position: relative; height: 20px; font-size: 16px; line-height: 20px; vertical-align: middle; }
-
-@media only screen and (min-width: 600px) and (max-width: 765px) { a.resource-link span.text { height: 20px; } }
-
-@media only screen and (min-width: 766px) and (max-width: 999px) { a.resource-link span.text { height: 20px; } }
-
-@media only screen and (min-width: 1000px) and (max-width: 1199px) { a.resource-link span.text { height: 23px; } }
-
-@media only screen and (min-width: 1200px) { a.resource-link span.text { height: 26px; } }
-
-@media only screen and (min-width: 600px) and (max-width: 765px) { a.resource-link span.text { font-size: 16px; } }
-
-@media only screen and (min-width: 766px) and (max-width: 999px) { a.resource-link span.text { font-size: 16px; } }
-
-@media only screen and (min-width: 1000px) and (max-width: 1199px) { a.resource-link span.text { font-size: 18px; } }
-
-@media only screen and (min-width: 1200px) { a.resource-link span.text { font-size: 18px; } }
-
-@media only screen and (min-width: 600px) and (max-width: 765px) { a.resource-link span.text { line-height: 20px; } }
-
-@media only screen and (min-width: 766px) and (max-width: 999px) { a.resource-link span.text { line-height: 20px; } }
-
-@media only screen and (min-width: 1000px) and (max-width: 1199px) { a.resource-link span.text { line-height: 23px; } }
-
-@media only screen and (min-width: 1200px) { a.resource-link span.text { line-height: 26px; } }
 
 .hll { background-color: #495057; }
 
@@ -1755,5 +1607,163 @@ body#four-oh-four .colophon h1.display { margin-left: -3px; }
 @media only screen and (min-width: 1000px) and (max-width: 1199px) { body#four-oh-four .colophon h1.display { margin-left: -10px; } }
 
 @media only screen and (min-width: 1200px) { body#four-oh-four .colophon h1.display { margin-left: -10px; } }
+
+span.chiclet { display: inline-block; height: 100%; border-radius: 100px; padding-right: 5px; }
+
+span.chiclet span.icon { display: inline-block; width: 20px; height: 20px; font-size: 10px; line-height: 20px; padding: 0px; vertical-align: middle; border-radius: 100px; text-align: center; }
+
+@media only screen and (min-width: 600px) and (max-width: 765px) { span.chiclet span.icon { width: 20px; } }
+
+@media only screen and (min-width: 766px) and (max-width: 999px) { span.chiclet span.icon { width: 20px; } }
+
+@media only screen and (min-width: 1000px) and (max-width: 1199px) { span.chiclet span.icon { width: 23px; } }
+
+@media only screen and (min-width: 1200px) { span.chiclet span.icon { width: 26px; } }
+
+@media only screen and (min-width: 600px) and (max-width: 765px) { span.chiclet span.icon { height: 20px; } }
+
+@media only screen and (min-width: 766px) and (max-width: 999px) { span.chiclet span.icon { height: 20px; } }
+
+@media only screen and (min-width: 1000px) and (max-width: 1199px) { span.chiclet span.icon { height: 23px; } }
+
+@media only screen and (min-width: 1200px) { span.chiclet span.icon { height: 26px; } }
+
+@media only screen and (min-width: 600px) and (max-width: 765px) { span.chiclet span.icon { font-size: 10px; } }
+
+@media only screen and (min-width: 766px) and (max-width: 999px) { span.chiclet span.icon { font-size: 10px; } }
+
+@media only screen and (min-width: 1000px) and (max-width: 1199px) { span.chiclet span.icon { font-size: 12px; } }
+
+@media only screen and (min-width: 1200px) { span.chiclet span.icon { font-size: 12px; } }
+
+@media only screen and (min-width: 600px) and (max-width: 765px) { span.chiclet span.icon { line-height: 20px; } }
+
+@media only screen and (min-width: 766px) and (max-width: 999px) { span.chiclet span.icon { line-height: 20px; } }
+
+@media only screen and (min-width: 1000px) and (max-width: 1199px) { span.chiclet span.icon { line-height: 23px; } }
+
+@media only screen and (min-width: 1200px) { span.chiclet span.icon { line-height: 26px; } }
+
+span.chiclet span.text { display: inline-block; position: relative; height: 20px; font-size: 16px; line-height: 20px; vertical-align: middle; }
+
+@media only screen and (min-width: 600px) and (max-width: 765px) { span.chiclet span.text { height: 20px; } }
+
+@media only screen and (min-width: 766px) and (max-width: 999px) { span.chiclet span.text { height: 20px; } }
+
+@media only screen and (min-width: 1000px) and (max-width: 1199px) { span.chiclet span.text { height: 23px; } }
+
+@media only screen and (min-width: 1200px) { span.chiclet span.text { height: 26px; } }
+
+@media only screen and (min-width: 600px) and (max-width: 765px) { span.chiclet span.text { font-size: 16px; } }
+
+@media only screen and (min-width: 766px) and (max-width: 999px) { span.chiclet span.text { font-size: 16px; } }
+
+@media only screen and (min-width: 1000px) and (max-width: 1199px) { span.chiclet span.text { font-size: 18px; } }
+
+@media only screen and (min-width: 1200px) { span.chiclet span.text { font-size: 18px; } }
+
+@media only screen and (min-width: 600px) and (max-width: 765px) { span.chiclet span.text { line-height: 20px; } }
+
+@media only screen and (min-width: 766px) and (max-width: 999px) { span.chiclet span.text { line-height: 20px; } }
+
+@media only screen and (min-width: 1000px) and (max-width: 1199px) { span.chiclet span.text { line-height: 23px; } }
+
+@media only screen and (min-width: 1200px) { span.chiclet span.text { line-height: 26px; } }
+
+aside.links { display: block; margin: 15px 0; }
+
+aside.tags { display: block; margin-top: 15px; }
+
+aside.tags span.chiclet { float: left !important; }
+
+aside.tags::after { content: ""; clear: both; display: table; }
+
+span.chiclet { margin: 1px 4px 1px 0; }
+
+span.type.chiclet { float: right; background: #b0e7ff; color: #1d1d1d; border: 3px solid #b0e7ff; }
+
+span.type.chiclet span.icon { background: #e3f7ff; border: 1px solid #e3f7ff; }
+
+span.topic.chiclet { background: #e9ecef; color: #1d1d1d; border: 3px solid #e9ecef; }
+
+span.topic.chiclet span.icon { background: #868e96; border: 1px solid #dee2e6; }
+
+a.resource-link { display: inline-block; height: 100%; border-radius: 100px; padding-right: 5px; text-decoration: none; margin: 1px 4px 1px 0; }
+
+a.resource-link:link { background: #ffe6f4; color: #1d1d1d; border: 3px solid #ffe6f4; }
+
+a.resource-link:link span.icon { background: #fafafa; border: 1px solid #fafafa; }
+
+a.resource-link:visited { background: #ffe6f4; color: #1d1d1d; border: 3px solid #ffe6f4; }
+
+a.resource-link:visited span.icon { background: #fafafa; border: 1px solid #fafafa; }
+
+a.resource-link:hover { background: #e6007e; color: #fafafa; border: 3px solid #e6007e; }
+
+a.resource-link:hover span.icon { background: #ffe6f4; }
+
+a.resource-link:focus { background: #ffed00; color: #1d1d1d; border: 3px solid #ffed00; }
+
+a.resource-link:focus span.icon { background: #fafafa; border: 1px solid #ffed00; }
+
+a.resource-link span.icon { display: inline-block; width: 20px; height: 20px; font-size: 10px; line-height: 20px; padding: 0px; vertical-align: middle; border-radius: 100px; text-align: center; }
+
+@media only screen and (min-width: 600px) and (max-width: 765px) { a.resource-link span.icon { width: 20px; } }
+
+@media only screen and (min-width: 766px) and (max-width: 999px) { a.resource-link span.icon { width: 20px; } }
+
+@media only screen and (min-width: 1000px) and (max-width: 1199px) { a.resource-link span.icon { width: 23px; } }
+
+@media only screen and (min-width: 1200px) { a.resource-link span.icon { width: 26px; } }
+
+@media only screen and (min-width: 600px) and (max-width: 765px) { a.resource-link span.icon { height: 20px; } }
+
+@media only screen and (min-width: 766px) and (max-width: 999px) { a.resource-link span.icon { height: 20px; } }
+
+@media only screen and (min-width: 1000px) and (max-width: 1199px) { a.resource-link span.icon { height: 23px; } }
+
+@media only screen and (min-width: 1200px) { a.resource-link span.icon { height: 26px; } }
+
+@media only screen and (min-width: 600px) and (max-width: 765px) { a.resource-link span.icon { font-size: 10px; } }
+
+@media only screen and (min-width: 766px) and (max-width: 999px) { a.resource-link span.icon { font-size: 10px; } }
+
+@media only screen and (min-width: 1000px) and (max-width: 1199px) { a.resource-link span.icon { font-size: 12px; } }
+
+@media only screen and (min-width: 1200px) { a.resource-link span.icon { font-size: 12px; } }
+
+@media only screen and (min-width: 600px) and (max-width: 765px) { a.resource-link span.icon { line-height: 20px; } }
+
+@media only screen and (min-width: 766px) and (max-width: 999px) { a.resource-link span.icon { line-height: 20px; } }
+
+@media only screen and (min-width: 1000px) and (max-width: 1199px) { a.resource-link span.icon { line-height: 23px; } }
+
+@media only screen and (min-width: 1200px) { a.resource-link span.icon { line-height: 26px; } }
+
+a.resource-link span.text { display: inline-block; position: relative; height: 20px; font-size: 16px; line-height: 20px; vertical-align: middle; }
+
+@media only screen and (min-width: 600px) and (max-width: 765px) { a.resource-link span.text { height: 20px; } }
+
+@media only screen and (min-width: 766px) and (max-width: 999px) { a.resource-link span.text { height: 20px; } }
+
+@media only screen and (min-width: 1000px) and (max-width: 1199px) { a.resource-link span.text { height: 23px; } }
+
+@media only screen and (min-width: 1200px) { a.resource-link span.text { height: 26px; } }
+
+@media only screen and (min-width: 600px) and (max-width: 765px) { a.resource-link span.text { font-size: 16px; } }
+
+@media only screen and (min-width: 766px) and (max-width: 999px) { a.resource-link span.text { font-size: 16px; } }
+
+@media only screen and (min-width: 1000px) and (max-width: 1199px) { a.resource-link span.text { font-size: 18px; } }
+
+@media only screen and (min-width: 1200px) { a.resource-link span.text { font-size: 18px; } }
+
+@media only screen and (min-width: 600px) and (max-width: 765px) { a.resource-link span.text { line-height: 20px; } }
+
+@media only screen and (min-width: 766px) and (max-width: 999px) { a.resource-link span.text { line-height: 20px; } }
+
+@media only screen and (min-width: 1000px) and (max-width: 1199px) { a.resource-link span.text { line-height: 23px; } }
+
+@media only screen and (min-width: 1200px) { a.resource-link span.text { line-height: 26px; } }
 
 /*# sourceMappingURL=styles.css.map */
