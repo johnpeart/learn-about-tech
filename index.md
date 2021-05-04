@@ -13,4 +13,4 @@ This website contains links to news websites, blogs, newsletters, podcasts, book
 > - [Sorted by topic](/sort/topic)
 > - [Sorted alphabetically](/sort/a-to-z)
 
-Want to suggest something to add? [Suggest an addition to this file on Github]()
+Want to suggest something to add? [Suggest an addition to this file on Github](https://github.com/johnpeart/learn-about-tech/blob/main/_data/resources.yml)
