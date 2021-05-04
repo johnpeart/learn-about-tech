@@ -146,16 +146,6 @@ ul { list-style: none; padding-top: 0; padding-left: 24px; padding-bottom: 16px;
 
 @media only screen and (min-width: 1200px) { ul { padding-bottom: 18px; } }
 
-ul li:before { position: relative; content: "\2014"; left: -8px; }
-
-@media only screen and (min-width: 600px) and (max-width: 765px) { ul li:before { left: -8px; } }
-
-@media only screen and (min-width: 766px) and (max-width: 999px) { ul li:before { left: -8px; } }
-
-@media only screen and (min-width: 1000px) and (max-width: 1199px) { ul li:before { left: -9px; } }
-
-@media only screen and (min-width: 1200px) { ul li:before { left: -9px; } }
-
 ol { list-style: decimal; padding-top: 0; padding-left: 32px; padding-bottom: 16px; }
 
 @media only screen and (min-width: 600px) and (max-width: 765px) { ol { padding-left: 32px; } }
