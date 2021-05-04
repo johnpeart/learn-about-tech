@@ -55,16 +55,9 @@ ul {
 	list-style: none;
 	padding-top: 0;
 	@include toggleSizes(padding-left, ($font-size--p--xs * 1.5), ($font-size--p--sm * 1.5), 0, 0, 0);
-	@include toggleSizes(padding-bottom, $font-size--p--xs, $font-size--p--sm, $font-size--p--md, $font-size--p--lg, $font-size--p--xl);
-	
-	li:before {
-		position: relative;
-		content: "\2014";
-
-		@include toggleSizes(left, -($font-size--p--xs / 2), -($font-size--p--sm / 2), -($font-size--p--md / 2), -($font-size--p--lg / 2), -($font-size--p--xl / 2));
-	}
-	
+	@include toggleSizes(padding-bottom, $font-size--p--xs, $font-size--p--sm, $font-size--p--md, $font-size--p--lg, $font-size--p--xl);	
 }
+
 ol {
 	
 	list-style: decimal;
